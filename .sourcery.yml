@@ -1,0 +1,7 @@
+sources:
+  - CodingChallenge/
+templates:
+  - Sourcery/AutoMockable.stencil
+  - Sourcery/AutoStub.stencil
+output:
+  CodingChallenge/Generated

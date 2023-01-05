@@ -1,0 +1,91 @@
+// swiftlint:disable all
+import Foundation
+import UIKit
+{% macro defaultizeEnum enum %}{% if enum.cases.first.hasAssociatedValue %}{% map enum.cases.first.associatedValues into values using associatedValue %}{{ associatedValue.localName }}: {% call defaultize associatedValue %}{% endmap %}.{{ enum.cases.first.name }}({{ values|join:", " }}){% else %}.{{ enum.cases.first.name }}{% endif %}{% endmacro %}
+{% macro defaultize variable %}{% if variable.isOptional %}nil{% elif variable.isArray %}[]{% elif variable.isDictionary %}[:]{% elif variable.type.kind == "enum" %}{% call defaultizeEnum variable.type %}{% else %}.dummy(){% endif %}{% endmacro %}
+
+{% for type in types.all where type|annotated:"AutoStub" or type.based.AutoStub %}
+extension {{ type.name }} {
+	{% map type.storedVariables into arguments using argument %}{{ argument.name }}: {{ argument.typeName }} = {% if argument.annotations.defaultStub %}{{ argument.annotations.defaultStub }}{% else %}{% call defaultize argument %}{% endif %}{% endmap %}
+	{% map type.storedVariables into properties using property %}{{ property.name }}: {{ property.name }}{% endmap %}
+	static func stub({{ arguments|join:", " }}) -> {{ type.name }} {
+		return {{ type.name }}({{ properties|join:", " }})
+	}
+
+    static func dummy() -> {{ type.name }} {
+        return {{ type.name }}.stub()
+    }
+}
+{% endfor %}
+
+extension Bool {
+    static func dummy() -> Bool {
+        false
+    }
+}
+
+extension URL {
+    static func dummy() -> URL {
+        URL(string: "www.google.com")!
+    }
+}
+
+extension StringProtocol {
+    static func dummy() -> Self {
+        "Default text"
+    }
+}
+
+extension String {
+    static func random() -> String {
+        UUID().uuidString
+    }
+}
+
+extension ExpressibleByIntegerLiteral {
+    static func dummy() -> Self {
+        234023
+    }
+}
+
+extension Optional {
+    static func dummy() -> Self {
+        nil
+    }
+}
+
+extension UUID {
+    static func dummy() -> Self {
+        UUID()
+    }
+}
+
+extension UIImage {
+    static func dummy() -> UIImage {
+        UIImage()
+    }
+}
+
+extension CGSize {
+    static func dummy() -> Self {
+        .zero
+    }
+}
+
+extension Date {
+    static func dummy() -> Self {
+        .init()
+    }
+}
+
+extension UIColor {
+    static func dummy() -> UIColor {
+        return UIColor(
+            red: .random(in: 0...1),
+            green: .random(in: 0...1),
+            blue: .random(in: 0...1),
+            alpha: 1.0
+        )
+    }
+}
+// swiftlint:enable all

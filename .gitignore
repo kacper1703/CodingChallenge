@@ -48,3 +48,5 @@ Thumbs.db
 *.mov
 *.wmv
 
+CodingChallenge.xcodeproj/xcuserdata
+CodingChallenge.xcodeproj/project.xcworkspace/xcuserdata

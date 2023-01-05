@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,26 @@
 		2349FD6D261E4F6A00A1FEAA /* CodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349FD6C261E4F6A00A1FEAA /* CodingChallengeTests.swift */; };
 		2349FD78261E4F6A00A1FEAA /* CodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349FD77261E4F6A00A1FEAA /* CodingChallengeUITests.swift */; };
 		2349FD89261E4F9900A1FEAA /* ShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349FD88261E4F9900A1FEAA /* ShiftsView.swift */; };
+		7212F6FA2966F37F0012B578 /* ShiftCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212F6F92966F37F0012B578 /* ShiftCardView.swift */; };
+		7212F6FC2966F5240012B578 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212F6FB2966F5240012B578 /* Array+Extensions.swift */; };
+		7212F6FE2966F6E90012B578 /* ProcessInfo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212F6FD2966F6E90012B578 /* ProcessInfo+Extensions.swift */; };
+		7212F7002966F98F0012B578 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212F6FF2966F98F0012B578 /* HexColor.swift */; };
+		7212F7032966FF270012B578 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 7212F7022966FF270012B578 /* SFSafeSymbols */; };
+		7212F7052967068F0012B578 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212F7042967068F0012B578 /* Date+Extensions.swift */; };
+		7212F707296709130012B578 /* ShiftDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212F706296709130012B578 /* ShiftDetailsView.swift */; };
+		722D6C352966D17A002F89B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 722D6C342966D17A002F89B0 /* Alamofire */; };
+		722D6C382966D285002F89B0 /* ShiftsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C372966D285002F89B0 /* ShiftsRequest.swift */; };
+		722D6C3A2966D28D002F89B0 /* ShiftsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C392966D28D002F89B0 /* ShiftsResponse.swift */; };
+		722D6C3C2966D2CF002F89B0 /* ShiftsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C3B2966D2CF002F89B0 /* ShiftsNetworkService.swift */; };
+		722D6C3E2966D3B1002F89B0 /* ShiftsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C3D2966D3B1002F89B0 /* ShiftsViewViewModel.swift */; };
+		722D6C422966E284002F89B0 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C402966E284002F89B0 /* AutoMockable.generated.swift */; };
+		722D6C432966E284002F89B0 /* AutoStub.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C412966E284002F89B0 /* AutoStub.generated.swift */; };
+		722D6C462966E82C002F89B0 /* CollectionLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C452966E82C002F89B0 /* CollectionLoadingView.swift */; };
+		722D6C482966E84D002F89B0 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C472966E84D002F89B0 /* Shimmer.swift */; };
+		722D6C4A2966EA40002F89B0 /* DayOnlyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D6C492966EA40002F89B0 /* DayOnlyDateFormatter.swift */; };
+		72F65243296817CE003A11C8 /* ColorIndicatorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F65242296817CE003A11C8 /* ColorIndicatorText.swift */; };
+		72F65245296819FD003A11C8 /* ShiftTimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F65244296819FD003A11C8 /* ShiftTimesView.swift */; };
+		72F65248296826EA003A11C8 /* ShiftSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F65247296826EA003A11C8 /* ShiftSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +65,24 @@
 		2349FD77261E4F6A00A1FEAA /* CodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeUITests.swift; sourceTree = "<group>"; };
 		2349FD79261E4F6A00A1FEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2349FD88261E4F9900A1FEAA /* ShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsView.swift; sourceTree = "<group>"; };
+		7212F6F92966F37F0012B578 /* ShiftCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftCardView.swift; sourceTree = "<group>"; };
+		7212F6FB2966F5240012B578 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		7212F6FD2966F6E90012B578 /* ProcessInfo+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+Extensions.swift"; sourceTree = "<group>"; };
+		7212F6FF2966F98F0012B578 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		7212F7042967068F0012B578 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		7212F706296709130012B578 /* ShiftDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftDetailsView.swift; sourceTree = "<group>"; };
+		722D6C372966D285002F89B0 /* ShiftsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsRequest.swift; sourceTree = "<group>"; };
+		722D6C392966D28D002F89B0 /* ShiftsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsResponse.swift; sourceTree = "<group>"; };
+		722D6C3B2966D2CF002F89B0 /* ShiftsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsNetworkService.swift; sourceTree = "<group>"; };
+		722D6C3D2966D3B1002F89B0 /* ShiftsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsViewViewModel.swift; sourceTree = "<group>"; };
+		722D6C402966E284002F89B0 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
+		722D6C412966E284002F89B0 /* AutoStub.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoStub.generated.swift; sourceTree = "<group>"; };
+		722D6C452966E82C002F89B0 /* CollectionLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLoadingView.swift; sourceTree = "<group>"; };
+		722D6C472966E84D002F89B0 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
+		722D6C492966EA40002F89B0 /* DayOnlyDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOnlyDateFormatter.swift; sourceTree = "<group>"; };
+		72F65242296817CE003A11C8 /* ColorIndicatorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorIndicatorText.swift; sourceTree = "<group>"; };
+		72F65244296819FD003A11C8 /* ShiftTimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftTimesView.swift; sourceTree = "<group>"; };
+		72F65247296826EA003A11C8 /* ShiftSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7212F7032966FF270012B578 /* SFSafeSymbols in Frameworks */,
+				722D6C352966D17A002F89B0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +135,14 @@
 		2349FD59261E4F6900A1FEAA /* CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				2349FD5A261E4F6900A1FEAA /* CodingChallengeApp.swift */,
-				2349FD88261E4F9900A1FEAA /* ShiftsView.swift */,
-				2349FD5E261E4F6A00A1FEAA /* Assets.xcassets */,
 				2349FD63261E4F6A00A1FEAA /* Info.plist */,
+				2349FD5A261E4F6900A1FEAA /* CodingChallengeApp.swift */,
+				2349FD5E261E4F6A00A1FEAA /* Assets.xcassets */,
+				722D6C362966D271002F89B0 /* API */,
+				722D6C3F2966E284002F89B0 /* Generated */,
+				722D6C442966E7EF002F89B0 /* Helpers and Extensions */,
 				2349FD60261E4F6A00A1FEAA /* Preview Content */,
+				72DF8B61296811F000CE58E4 /* Shifts List */,
 			);
 			path = CodingChallenge;
 			sourceTree = "<group>";
@@ -130,6 +173,77 @@
 			path = CodingChallengeUITests;
 			sourceTree = "<group>";
 		};
+		722D6C362966D271002F89B0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				722D6C372966D285002F89B0 /* ShiftsRequest.swift */,
+				722D6C392966D28D002F89B0 /* ShiftsResponse.swift */,
+				722D6C3B2966D2CF002F89B0 /* ShiftsNetworkService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		722D6C3F2966E284002F89B0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				722D6C402966E284002F89B0 /* AutoMockable.generated.swift */,
+				722D6C412966E284002F89B0 /* AutoStub.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		722D6C442966E7EF002F89B0 /* Helpers and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7212F6FB2966F5240012B578 /* Array+Extensions.swift */,
+				7212F7042967068F0012B578 /* Date+Extensions.swift */,
+				722D6C492966EA40002F89B0 /* DayOnlyDateFormatter.swift */,
+				7212F6FF2966F98F0012B578 /* HexColor.swift */,
+				7212F6FD2966F6E90012B578 /* ProcessInfo+Extensions.swift */,
+				722D6C472966E84D002F89B0 /* Shimmer.swift */,
+				72F652462968239D003A11C8 /* Views */,
+			);
+			path = "Helpers and Extensions";
+			sourceTree = "<group>";
+		};
+		72DF8B60296811E500CE58E4 /* Shift Details */ = {
+			isa = PBXGroup;
+			children = (
+				7212F706296709130012B578 /* ShiftDetailsView.swift */,
+			);
+			path = "Shift Details";
+			sourceTree = "<group>";
+		};
+		72DF8B61296811F000CE58E4 /* Shifts List */ = {
+			isa = PBXGroup;
+			children = (
+				2349FD88261E4F9900A1FEAA /* ShiftsView.swift */,
+				722D6C3D2966D3B1002F89B0 /* ShiftsViewViewModel.swift */,
+				72DF8B60296811E500CE58E4 /* Shift Details */,
+				72DF8B62296811FE00CE58E4 /* Views */,
+				72F65247296826EA003A11C8 /* ShiftSection.swift */,
+			);
+			path = "Shifts List";
+			sourceTree = "<group>";
+		};
+		72DF8B62296811FE00CE58E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7212F6F92966F37F0012B578 /* ShiftCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72F652462968239D003A11C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				722D6C452966E82C002F89B0 /* CollectionLoadingView.swift */,
+				72F65242296817CE003A11C8 /* ColorIndicatorText.swift */,
+				72F65244296819FD003A11C8 /* ShiftTimesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +260,10 @@
 			dependencies = (
 			);
 			name = CodingChallenge;
+			packageProductDependencies = (
+				722D6C342966D17A002F89B0 /* Alamofire */,
+				7212F7022966FF270012B578 /* SFSafeSymbols */,
+			);
 			productName = CodingChallenge;
 			productReference = 2349FD57261E4F6900A1FEAA /* CodingChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +335,10 @@
 				Base,
 			);
 			mainGroup = 2349FD4E261E4F6900A1FEAA;
+			packageReferences = (
+				722D6C332966D17A002F89B0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7212F7012966FF270012B578 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = 2349FD58261E4F6900A1FEAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +381,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722D6C3E2966D3B1002F89B0 /* ShiftsViewViewModel.swift in Sources */,
+				7212F6FA2966F37F0012B578 /* ShiftCardView.swift in Sources */,
+				722D6C422966E284002F89B0 /* AutoMockable.generated.swift in Sources */,
+				7212F6FE2966F6E90012B578 /* ProcessInfo+Extensions.swift in Sources */,
 				2349FD89261E4F9900A1FEAA /* ShiftsView.swift in Sources */,
+				722D6C482966E84D002F89B0 /* Shimmer.swift in Sources */,
 				2349FD5B261E4F6900A1FEAA /* CodingChallengeApp.swift in Sources */,
+				7212F7002966F98F0012B578 /* HexColor.swift in Sources */,
+				72F65248296826EA003A11C8 /* ShiftSection.swift in Sources */,
+				722D6C462966E82C002F89B0 /* CollectionLoadingView.swift in Sources */,
+				7212F7052967068F0012B578 /* Date+Extensions.swift in Sources */,
+				72F65245296819FD003A11C8 /* ShiftTimesView.swift in Sources */,
+				72F65243296817CE003A11C8 /* ColorIndicatorText.swift in Sources */,
+				722D6C4A2966EA40002F89B0 /* DayOnlyDateFormatter.swift in Sources */,
+				722D6C382966D285002F89B0 /* ShiftsRequest.swift in Sources */,
+				7212F6FC2966F5240012B578 /* Array+Extensions.swift in Sources */,
+				722D6C3A2966D28D002F89B0 /* ShiftsResponse.swift in Sources */,
+				722D6C3C2966D2CF002F89B0 /* ShiftsNetworkService.swift in Sources */,
+				7212F707296709130012B578 /* ShiftDetailsView.swift in Sources */,
+				722D6C432966E284002F89B0 /* AutoStub.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +720,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7212F7012966FF270012B578 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+		722D6C332966D17A002F89B0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7212F7022966FF270012B578 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7212F7012966FF270012B578 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		722D6C342966D17A002F89B0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 722D6C332966D17A002F89B0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2349FD4F261E4F6900A1FEAA /* Project object */;
 }

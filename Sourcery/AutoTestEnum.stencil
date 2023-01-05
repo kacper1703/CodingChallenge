@@ -1,0 +1,22 @@
+// swiftlint:disable all
+{% macro autoPrismFlag case %}
+    var is{{ case.name|upperFirstLetter }}: Bool {
+        switch self {
+        case .{{ case.name }}: return true
+        default: return false
+        }
+    }
+{% endmacro %}
+
+{% for enum in types.enums where enum|annotated:"AutoTestEnum" %}
+extension {{ enum.name }} {
+	{% if enum.cases.count == 1 %}
+	var is{{ enum.cases.first.name|upperFirstLetter }}: Bool { true }
+    {% else %}{% for case in enum.cases %}
+    {% call autoPrismFlag case %}
+
+    {% endfor %}
+    {% endif%}
+}
+{% endfor %}
+// swiftlint:enable all
